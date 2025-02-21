@@ -1,0 +1,4 @@
+user_id,email,hashed_password,first_name,last_name,created_at
+U001,john.doe@example.com,pbkdf2_sha256$29000$abcdef1234$somehashvalue,John,Doe,2025-01-15T10:23:45Z
+U002,jane.smith@example.com,pbkdf2_sha256$29000$ghijkl5678$somehashvalue,Jane,Smith,2025-01-30T14:05:12Z
+U003,alex.jones@example.com,pbkdf2_sha256$29000$mnopqr9012$somehashvalue,Alex,Jones,2025-02-05T08:59:59Z

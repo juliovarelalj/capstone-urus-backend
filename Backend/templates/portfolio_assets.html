@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Portfolio Assets</title>
+</head>
+<body>
+    <h1>Portfolio Assets</h1>
+    <table border="1">
+        <tr>
+            <th>portfolio_asset_id</th>
+            <th>portfolio_id</th>
+            <th>asset_id</th>
+            <th>quantity</th>
+            <th>avg_cost</th>
+            <th>created_at</th>
+        </tr>
+        {% for pa in portfolio_assets %}
+        <tr>
+            <td>{{ pa.portfolio_asset_id }}</td>
+            <td>{{ pa.portfolio_id }}</td>
+            <td>{{ pa.asset_id }}</td>
+            <td>{{ pa.quantity }}</td>
+            <td>{{ pa.avg_cost }}</td>
+            <td>{{ pa.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{{ url_for('add_portfolio_asset_html') }}">Agregar Portfolio Asset</a>
+</body>
+</html>

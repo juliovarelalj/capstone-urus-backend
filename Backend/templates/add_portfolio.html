@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Portfolio</title>
+</head>
+<body>
+    <h1>Agregar Nuevo Portfolio</h1>
+    <form action="{{ url_for('add_portfolio_html') }}" method="POST">
+        <label>User ID:</label>
+        <input type="text" name="user_id" required><br><br>
+
+        <label>Portfolio Name:</label>
+        <input type="text" name="portfolio_name" required><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

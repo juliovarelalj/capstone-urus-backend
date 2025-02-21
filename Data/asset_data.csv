@@ -1,0 +1,11 @@
+asset_id,ticker,name,asset_type,currency
+A001,AAPL,Apple Inc.,stock,USD
+A002,MSFT,Microsoft Corporation,stock,USD
+A003,AMZN,"Amazon.com, Inc.",stock,USD
+A004,TSLA,"Tesla, Inc.",stock,USD
+A005,GOOG,Alphabet Inc.,stock,USD
+A006,NVDA,Nvidia Corporation,stock,USD
+A007,BTC,Bitcoin,crypto,USD
+A008,ETH,Ethereum,crypto,USD
+A009,SPY,SPDR S&P 500 ETF,ETF,USD
+A010,QQQ,Invesco QQQ Trust,ETF,USD

@@ -1,0 +1,6 @@
+portfolio_id,user_id,portfolio_name,created_at
+P001,U001,Tech Portfolio,2025-02-01T10:00:00Z
+P002,U001,Retirement Portfolio,2025-02-02T11:15:00Z
+P003,U002,Crypto Portfolio,2025-02-01T09:45:00Z
+P004,U003,Tech Portfolio,2025-02-03T14:20:00Z
+P005,U003,Retirement Portfolio,2025-02-05T08:30:00Z

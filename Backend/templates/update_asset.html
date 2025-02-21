@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Asset</title>
+</head>
+<body>
+    <h1>Actualizar Asset</h1>
+    <form action="{{ url_for('update_asset_html', asset_id=asset.asset_id) }}" method="POST">
+        <label for="ticker">Ticker:</label>
+        <input type="text" id="ticker" name="ticker" value="{{ asset.ticker }}" required><br><br>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ asset.name }}" required><br><br>
+        
+        <label for="asset_type">Asset Type:</label>
+        <input type="text" id="asset_type" name="asset_type" value="{{ asset.asset_type }}" required><br><br>
+        
+        <label for="currency">Currency:</label>
+        <input type="text" id="currency" name="currency" value="{{ asset.currency }}" required><br><br>
+        
+        <button type="submit">Actualizar Asset</button>
+    </form>
+    <br>
+    <a href="{{ url_for('list_assets_html') }}">Volver a la lista de assets</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Portfolios</title>
+</head>
+<body>
+    <h1>Portfolios</h1>
+    <table border="1">
+        <tr>
+            <th>portfolio_id</th>
+            <th>user_id</th>
+            <th>portfolio_name</th>
+            <th>created_at</th>
+        </tr>
+        {% for p in portfolios %}
+        <tr>
+            <td>{{ p.portfolio_id }}</td>
+            <td>{{ p.user_id }}</td>
+            <td>{{ p.portfolio_name }}</td>
+            <td>{{ p.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{{ url_for('add_portfolio_html') }}">Agregar Portfolio</a>
+</body>
+</html>

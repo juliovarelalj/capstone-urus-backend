@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Assets</title>
+</head>
+<body>
+    <h1>Assets</h1>
+    <table border="1">
+        <tr>
+            <th>asset_id</th>
+            <th>ticker</th>
+            <th>name</th>
+            <th>asset_type</th>
+            <th>currency</th>
+        </tr>
+        {% for a in assets %}
+        <tr>
+            <td>{{ a.asset_id }}</td>
+            <td>{{ a.ticker }}</td>
+            <td>{{ a.name }}</td>
+            <td>{{ a.asset_type }}</td>
+            <td>{{ a.currency }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{{ url_for('add_asset_html') }}">Agregar Asset</a>
+</body>
+</html>

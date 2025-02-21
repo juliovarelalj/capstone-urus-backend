@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Prices</title>
+</head>
+<body>
+    <h1>Prices</h1>
+    <table border="1">
+        <tr>
+            <th>price_id</th>
+            <th>asset_id</th>
+            <th>date</th>
+            <th>open_price</th>
+            <th>close_price</th>
+            <th>high_price</th>
+            <th>low_price</th>
+            <th>volume</th>
+        </tr>
+        {% for pr in prices %}
+        <tr>
+            <td>{{ pr.price_id }}</td>
+            <td>{{ pr.asset_id }}</td>
+            <td>{{ pr.date }}</td>
+            <td>{{ pr.open_price }}</td>
+            <td>{{ pr.close_price }}</td>
+            <td>{{ pr.high_price }}</td>
+            <td>{{ pr.low_price }}</td>
+            <td>{{ pr.volume }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{{ url_for('add_price_html') }}">Agregar Price</a>
+</body>
+</html>

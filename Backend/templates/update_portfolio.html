@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Portfolio</title>
+</head>
+<body>
+    <h1>Actualizar Portfolio</h1>
+    <form action="{{ url_for('update_portfolio_html', portfolio_id=portfolio.portfolio_id) }}" method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" value="{{ portfolio.user_id }}" required><br><br>
+        
+        <label for="portfolio_name">Portfolio Name:</label>
+        <input type="text" id="portfolio_name" name="portfolio_name" value="{{ portfolio.portfolio_name }}" required><br><br>
+        
+        <button type="submit">Actualizar Portfolio</button>
+    </form>
+    <br>
+    <a href="{{ url_for('list_portfolios_html') }}">Volver a la lista de portfolios</a>
+</body>
+</html>
