@@ -1,0 +1,62 @@
+import random
+import csv
+
+# Lista de 30 acciones (tickers) según tu dataset
+tickers = [
+    "AAPL", "MSFT", "AMZN", "GOOGL", "FB", "TSLA", "BRK.B", "NVDA", "JPM", "JNJ",
+    "UNH", "V", "PG", "MA", "HD", "DIS", "BAC", "ADBE", "CMCSA", "NFLX",
+    "INTC", "T", "VZ", "KO", "PFE", "MRK", "WMT", "CRM", "ORCL", "ABT"
+]
+
+# Posibles perfiles de riesgo y horizontes temporales
+risk_profiles = ["Bajo", "Medio", "Alto"]
+time_horizons = ["Corto plazo", "Mediano plazo", "Largo plazo"]
+
+# Lista para almacenar las filas a escribir en el CSV
+rows = []
+# Cabecera del CSV
+rows.append(["portfolio_name", "risk_profile", "time_horizon", "assets", "estimated_volatility", "average_return"])
+
+# Generar 20 portfolios
+for i in range(1, 21):
+    # Seleccionar aleatoriamente cuántos tickers incluir (entre 10 y 20)
+    num_stocks = random.randint(10, 20)
+    # Elegir un subconjunto aleatorio de la lista de tickers
+    subset = random.sample(tickers, num_stocks)
+    
+    # Asignar pesos aleatorios (entre 1 y 10) y escalarlos a 100%
+    raw_weights = [random.randint(1, 10) for _ in range(num_stocks)]
+    total = sum(raw_weights)
+    scaled_weights = [(w / total) * 100 for w in raw_weights]
+    
+    # Construir la cadena de "assets" en formato "TICKER:XX.XX%"
+    assets_str_parts = [f"{ticker}:{weight:.2f}%" for ticker, weight in zip(subset, scaled_weights)]
+    assets_str = "; ".join(assets_str_parts)
+    
+    # Elegir perfil de riesgo y horizonte temporal aleatorios
+    risk = random.choice(risk_profiles)
+    horizon = random.choice(time_horizons)
+    
+    # Generar volatilidad y rendimiento promedio simulados según el riesgo
+    if risk == "Bajo":
+        estimated_volatility = round(random.uniform(0.01, 0.02), 3)   # Ej: 1%-2%
+        average_return = round(random.uniform(0.003, 0.008), 3)       # Ej: 0.3%-0.8%
+    elif risk == "Medio":
+        estimated_volatility = round(random.uniform(0.02, 0.04), 3)   # Ej: 2%-4%
+        average_return = round(random.uniform(0.008, 0.015), 3)       # Ej: 0.8%-1.5%
+    else:  # Alto
+        estimated_volatility = round(random.uniform(0.04, 0.07), 3)   # Ej: 4%-7%
+        average_return = round(random.uniform(0.015, 0.03), 3)        # Ej: 1.5%-3%
+    
+    # Nombre del portfolio
+    portfolio_name = f"Portfolio_{i}"
+    
+    # Agregar la línea al CSV
+    rows.append([portfolio_name, risk, horizon, assets_str, estimated_volatility, average_return])
+
+# Escribir el contenido en el archivo CSV
+with open("portfoliostock.csv", "w", newline="") as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(rows)
+
+print("El archivo 'portfoliostock.csv' ha sido creado con éxito.")

@@ -1,0 +1,21 @@
+portfolio_name,risk_profile,time_horizon,assets,estimated_volatility,average_return
+Exchanges_Portfolio_1,Low,Medium Term,LSE:13.73%; ASX:11.76%; TSX:7.84%; JPX:7.84%; HKEX:17.65%; NYSE:11.76%; NASDAQ:5.88%; Euronext:17.65%; BSE:5.88%,0.014,0.003
+Exchanges_Portfolio_2,Medium,Short Term,HKEX:17.78%; ASX:22.22%; JPX:22.22%; SSE:2.22%; BSE:15.56%; NASDAQ:4.44%; LSE:15.56%,0.022,0.005
+Exchanges_Portfolio_3,Medium,Long Term,BSE:3.85%; ASX:15.38%; LSE:11.54%; JPX:26.92%; HKEX:19.23%; SSE:23.08%,0.02,0.008
+Exchanges_Portfolio_4,Medium,Long Term,TSX:5.71%; BSE:20.00%; NASDAQ:20.00%; HKEX:20.00%; LSE:5.71%; SSE:28.57%,0.028,0.01
+Exchanges_Portfolio_5,High,Short Term,ASX:7.27%; LSE:7.27%; HKEX:10.91%; Euronext:10.91%; NYSE:3.64%; JPX:14.55%; BSE:14.55%; NASDAQ:12.73%; SSE:18.18%,0.041,0.019
+Exchanges_Portfolio_6,Low,Medium Term,Euronext:1.89%; SSE:13.21%; TSX:1.89%; ASX:15.09%; JPX:13.21%; NYSE:15.09%; NASDAQ:7.55%; BSE:5.66%; HKEX:13.21%; LSE:13.21%,0.011,0.003
+Exchanges_Portfolio_7,Medium,Medium Term,TSX:35.29%; ASX:23.53%; SSE:41.18%,0.024,0.006
+Exchanges_Portfolio_8,Low,Short Term,TSX:24.24%; LSE:24.24%; NYSE:6.06%; Euronext:27.27%; HKEX:18.18%,0.01,0.003
+Exchanges_Portfolio_9,Medium,Long Term,BSE:16.67%; LSE:5.56%; NYSE:11.11%; HKEX:3.70%; NASDAQ:1.85%; SSE:9.26%; Euronext:16.67%; ASX:16.67%; JPX:18.52%,0.015,0.006
+Exchanges_Portfolio_10,Medium,Medium Term,LSE:1.82%; SSE:7.27%; ASX:18.18%; TSX:14.55%; NASDAQ:16.36%; NYSE:5.45%; HKEX:14.55%; Euronext:10.91%; JPX:9.09%; BSE:1.82%,0.021,0.008
+Exchanges_Portfolio_11,Medium,Short Term,NASDAQ:16.67%; Euronext:5.00%; TSX:16.67%; SSE:8.33%; JPX:8.33%; BSE:11.67%; NYSE:5.00%; ASX:16.67%; LSE:10.00%; HKEX:1.67%,0.021,0.009
+Exchanges_Portfolio_12,Low,Short Term,NYSE:6.67%; ASX:8.33%; HKEX:6.67%; LSE:15.00%; TSX:1.67%; NASDAQ:15.00%; SSE:6.67%; Euronext:16.67%; JPX:6.67%; BSE:16.67%,0.014,0.005
+Exchanges_Portfolio_13,Medium,Medium Term,BSE:22.22%; ASX:27.78%; SSE:50.00%,0.023,0.008
+Exchanges_Portfolio_14,High,Long Term,Euronext:8.00%; SSE:28.00%; NASDAQ:4.00%; NYSE:28.00%; LSE:24.00%; ASX:8.00%,0.043,0.013
+Exchanges_Portfolio_15,Low,Medium Term,HKEX:11.76%; NYSE:20.59%; SSE:23.53%; LSE:23.53%; NASDAQ:20.59%,0.007,0.002
+Exchanges_Portfolio_16,Medium,Long Term,LSE:26.47%; JPX:29.41%; NASDAQ:14.71%; HKEX:29.41%,0.023,0.009
+Exchanges_Portfolio_17,Medium,Long Term,LSE:17.65%; ASX:58.82%; TSX:17.65%; SSE:5.88%,0.017,0.008
+Exchanges_Portfolio_18,Low,Long Term,TSX:10.53%; NYSE:10.53%; HKEX:52.63%; JPX:26.32%,0.013,0.004
+Exchanges_Portfolio_19,Low,Long Term,JPX:27.78%; BSE:11.11%; Euronext:44.44%; ASX:16.67%,0.009,0.003
+Exchanges_Portfolio_20,High,Short Term,TSX:6.25%; NYSE:50.00%; JPX:43.75%,0.038,0.015

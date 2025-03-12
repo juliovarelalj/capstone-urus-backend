@@ -1,0 +1,18 @@
+<!-- app/templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stocks Sample</title>
+</head>
+<body>
+    <h1>Ejemplo de 10 filas de la tabla 'stocks'</h1>
+    <ul>
+        {% for row in rows %}
+            <li>
+                <!-- row es un objeto con las columnas de BigQuery -->
+                {{ row }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

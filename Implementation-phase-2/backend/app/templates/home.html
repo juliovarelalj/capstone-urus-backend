@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+</head>
+<body>
+    <h1>Bienvenido, estás logueado</h1>
+    <p>Esta es la página de inicio.</p>
+    <a href="{{ url_for('routes_bp.asset_classes') }}">Ir a Clases de Activos</a> |
+    <a href="{{ url_for('auth_bp.logout') }}">Cerrar Sesión</a>
+</body>
+</html>

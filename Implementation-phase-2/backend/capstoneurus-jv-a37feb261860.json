@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "capstoneurus-jv",
+  "private_key_id": "a37feb261860892f2ead4954fefdad6dc2c11428",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTcGPLRbFmffHY\nWICbgEm4pBR60aMAgH47WIlVkyIwR2FzKTmbex0xikXMlOOblfo6ROONi8H13ocj\n8UqOLjNRwjyGH7tqV3+HxVS48ZaOFf8hXu+L8lco6OTPB5YzSX8kmNO5tTnUau9i\ng63LcpXcIktmD2p19aEOMzN4spuIyoGvhTwkkzTE4afhd8yGPtHRAlWSVxdsl2kM\nS7vab4OJZrHQ7jFcwyEMISYolALe4Wqs8+SdDbxmrgoX7GVzhVZtOimFXa9+cdYj\niIXo5ZbBX1FH9OFUc3nL6Bi+dGO9cLTolwruGJadZK1GVGx0jlBci6qSWVkAhscs\n7nR3Par/AgMBAAECggEAC6x5ak3RVwEf1fZj8Gv+6kyrhnH0ywRhekdvUEQ/D72H\nHLwl4Ial8Bc3oZQkVVxRnK15qupm6BW/c3wWYB2OWKndau02RJw678ATDjWqqwNY\n2QaQRu9gMVAHVdEO9m6aT4Z+NRUBSC1TWOR+LT6cWPqqJ6GO11okb2BkcekKYZEw\nX1x8FfuvSkWYe63SohwUHO6H/L9vk64LIiS/esp9xcFZVByCXcORJw1+Tr8ZJoiD\n5JGfQXJ2g5ZevEHyXxPO38hkxKF/jL/HLSq4D9KY1TtWGUv4ZuLHdnTKVRqYmCkr\n+Ln4uSE3XSH/0dSFHewLTbIn/lNhcwB9wn6HbK2ewQKBgQDG8vUVGBENVbzMt1nc\nOhF2oC9FTPAQcCaHmSFfLb56cFcm10wjPYh1yxFkKUakPDTC4TY+0sRMuJP3mEeG\nBBbtcwtisxSsSrKuWw1XP519A30oqJHb8q16ZaqVBoyyvV/RxDSLYHmBgrtUUvnL\nB4Xckb5aa4rhKTeT3dRY9NkBHwKBgQC9uAgDzO0/Q+H4QjoLVig24SpwqH7wVed9\n1T/kBgn1f+shIOlrZrgVPqlen945Asu3LyzO7qkl+I3lLZDpDe+rpjN8UvzH45w6\n1EcGFMAZwAu7XQcTQI/cHPcTCsql3M2JzR0cYnTHIy23Sax67DYG34AFMBAk8GyE\naqqD8Qy6IQKBgCPifNxiK+k41sYiKD415yJ7gCtC1mZQpFJ/B2rwiFPzYXTrDpuo\npK2ChE+Jtmk3RtkD4FHymF+yR1Y4jGYa5LvNrXcPECKHkrUqTTy4h8Kd13x282A1\n5J6YKe2ZcdVnnRnsBwJA04nNt9Zc5Rt+7uE7FJegoDs+wPyV3ZByEZZHAoGAHIjO\nY8vxrv9FwHItisD1oXNyT6l4FivFeo6VYnVqEAuiUMRDd0zmyQM4tCu1X7vE6hNl\nWOZaeISOyvZ0gij/cEC6I6vTqzjXqZ195TM/xV+2JAMU6ldei8ureai43AN+wogg\nJcHFMKJg4N1q3L4kThpVhfI5q2Sh3bSxWtDpiiECgYAqy6rH8mZJr8rvsVdR59Vd\nxXYzs17x2PmvlF6+OFaR0KmitUzOwXLgl7ePRaKafC1t7MIxJoDBmMh6oEzAlsJC\nixLbvtACNZLbjNvcUd2f0no+JBoFPtnXMFeBg4hKTqYEBFJkIakxW4YWTdSlhIZR\nwKHDt0Y2XVdSvDjchHEbzQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigquery-access@capstoneurus-jv.iam.gserviceaccount.com",
+  "client_id": "117870954426672938790",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigquery-access%40capstoneurus-jv.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

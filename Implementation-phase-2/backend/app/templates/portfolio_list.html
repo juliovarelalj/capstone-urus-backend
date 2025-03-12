@@ -1,0 +1,255 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolios de {{ portfolio_class | capitalize }} - InversionPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('portfolios_bp.portfolio_classes') }}">InversionPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth_bp.logout') }}">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>Portfolios de {{ portfolio_class | capitalize }}</h1>
+    {% if error %}
+      <div class="alert alert-warning mt-3">
+        No se encontraron portfolios para esta categoría.
+      </div>
+    {% else %}
+      <div class="list-group">
+        {% for p in portfolios %}
+        <a href="{{ url_for('portfolios_bp.portfolio_detail', 
+                            portfolio_class=portfolio_class, 
+                            portfolio_id=p.portfolio_id) }}"
+           class="list-group-item list-group-item-action">
+          {{ p.portfolio_id }}
+        </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolios de {{ portfolio_class | capitalize }} - InversionPro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    /* Hero section con if/elif para el color */
+    .hero-section {
+      color: #fff;
+      padding: 60px 0;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    .hero-section p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('portfolios_bp.portfolio_classes') }}">InversionPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth_bp.logout') }}">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% if portfolio_class == 'bonds' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">
+      <div class="container">
+        <h1>Portfolios de Bonds</h1>
+        <p>
+          Explora la lista de portfolios disponibles en la clase de Bonds. Selecciona el que más te interese
+          para ver su detalle y evolución.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'cryptos' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
+      <div class="container">
+        <h1>Portfolios de Cryptos</h1>
+        <p>
+          Explora la lista de portfolios en la clase de Cryptos. Selecciona uno para analizar su rendimiento
+          y composición.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'currencies' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+      <div class="container">
+        <h1>Portfolios de Currencies</h1>
+        <p>
+          Portfolios diseñados para aprovechar las oportunidades del mercado de divisas.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'exchanges' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #2980b9, #3498db);">
+      <div class="container">
+        <h1>Portfolios de Exchanges</h1>
+        <p>
+          Selecciona un portfolio para conocer su detalle y evolución en el mercado de exchanges.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'funds' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #2c3e50, #34495e);">
+      <div class="container">
+        <h1>Portfolios de Funds</h1>
+        <p>
+          Explora nuestra lista de fondos cuidadosamente seleccionados para distintos perfiles de riesgo.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'market_indices' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">
+      <div class="container">
+        <h1>Portfolios de Market Indices</h1>
+        <p>
+          Encuentra portfolios basados en índices de mercado, diseñados para replicar comportamientos específicos.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'stocks' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+      <div class="container">
+        <h1>Portfolios de Stocks</h1>
+        <p>
+          Selecciona un portfolio para ver sus acciones y métricas de rendimiento.
+        </p>
+      </div>
+    </div>
+  {% elif portfolio_class == 'etf' %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #8e44ad, #9b59b6);">
+      <div class="container">
+        <h1>Portfolios de ETF</h1>
+        <p>
+          Explora los portfolios basados en ETF y conoce su comportamiento e información detallada.
+        </p>
+      </div>
+    </div>
+  {% else %}
+    <div class="hero-section" style="background: linear-gradient(135deg, #7f8c8d, #95a5a6);">
+      <div class="container">
+        <h1>Portfolios Desconocidos</h1>
+        <p>
+          Categoría no reconocida. Revisa nuestra lista de portfolios disponibles.
+        </p>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="container mb-5">
+    {% if error %}
+      <div class="alert alert-warning mt-3">
+        No se encontraron portfolios para esta categoría.
+      </div>
+    {% else %}
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for p in portfolios %}
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">{{ p.portfolio_id }}</h5>
+              <p class="text-muted mb-3">
+                Portfolio disponible en la clase {{ portfolio_class | capitalize }}.  
+                Conoce su detalle y evolución en el mercado.
+              </p>
+              <div class="mt-auto">
+                <a href="{{ url_for('portfolios_bp.portfolio_detail', 
+                                    portfolio_class=portfolio_class, 
+                                    portfolio_id=p.portfolio_id) }}"
+                   class="btn btn-outline-primary">
+                  Ver Detalle
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <span>&copy; 2025 InversionPro. Todos los derechos reservados.</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

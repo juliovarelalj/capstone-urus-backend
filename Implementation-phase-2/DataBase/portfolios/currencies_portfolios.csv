@@ -1,0 +1,21 @@
+portfolio_name,risk_profile,time_horizon,assets,estimated_volatility,average_return
+Currency_Portfolio_1,Low,Long Term,CNY:10.81%; JPY:8.11%; EUR:27.03%; GBP:13.51%; HKD:21.62%; CAD:18.92%,0.002,0.003
+Currency_Portfolio_2,High,Medium Term,USD:4.35%; AUD:26.09%; CHF:17.39%; GBP:21.74%; EUR:30.43%,0.018,0.011
+Currency_Portfolio_3,Medium,Medium Term,JPY:21.28%; GBP:21.28%; NZD:10.64%; EUR:12.77%; CAD:12.77%; HKD:21.28%,0.01,0.004
+Currency_Portfolio_4,High,Short Term,AUD:4.17%; EUR:2.08%; JPY:20.83%; CAD:2.08%; CHF:14.58%; USD:18.75%; HKD:14.58%; CNY:16.67%; NZD:6.25%,0.015,0.012
+Currency_Portfolio_5,Medium,Short Term,NZD:23.26%; USD:16.28%; AUD:20.93%; GBP:11.63%; JPY:2.33%; CNY:4.65%; EUR:2.33%; CHF:2.33%; CAD:16.28%,0.008,0.006
+Currency_Portfolio_6,High,Short Term,CAD:12.20%; CNY:24.39%; GBP:24.39%; CHF:7.32%; HKD:12.20%; AUD:19.51%,0.02,0.015
+Currency_Portfolio_7,Low,Long Term,CAD:31.25%; CHF:15.62%; HKD:15.62%; AUD:25.00%; GBP:6.25%; EUR:6.25%,0.005,0.002
+Currency_Portfolio_8,Medium,Short Term,CNY:8.70%; EUR:15.22%; NZD:8.70%; AUD:4.35%; HKD:17.39%; JPY:17.39%; GBP:13.04%; CAD:15.22%,0.007,0.005
+Currency_Portfolio_9,High,Short Term,EUR:11.63%; AUD:9.30%; HKD:16.28%; NZD:2.33%; CHF:2.33%; GBP:20.93%; USD:18.60%; JPY:11.63%; CAD:6.98%,0.016,0.008
+Currency_Portfolio_10,High,Long Term,EUR:5.56%; NZD:33.33%; GBP:33.33%; CNY:16.67%; JPY:11.11%,0.013,0.012
+Currency_Portfolio_11,High,Short Term,EUR:25.00%; USD:20.00%; CHF:10.00%; JPY:2.50%; NZD:22.50%; HKD:20.00%,0.011,0.012
+Currency_Portfolio_12,High,Short Term,CAD:19.05%; GBP:23.81%; NZD:23.81%; USD:19.05%; JPY:14.29%,0.016,0.012
+Currency_Portfolio_13,Low,Short Term,GBP:15.62%; CHF:12.50%; HKD:3.12%; CAD:12.50%; AUD:15.62%; NZD:1.56%; EUR:12.50%; CNY:15.62%; JPY:10.94%,0.004,0.003
+Currency_Portfolio_14,Medium,Medium Term,GBP:12.96%; CHF:11.11%; CAD:14.81%; CNY:14.81%; HKD:5.56%; JPY:9.26%; AUD:18.52%; NZD:11.11%; USD:1.85%,0.008,0.006
+Currency_Portfolio_15,Low,Short Term,CHF:2.94%; GBP:29.41%; HKD:2.94%; USD:5.88%; CNY:23.53%; EUR:23.53%; AUD:11.76%,0.002,0.003
+Currency_Portfolio_16,Low,Long Term,EUR:18.18%; CAD:6.82%; USD:22.73%; CHF:2.27%; GBP:15.91%; AUD:4.55%; CNY:2.27%; HKD:4.55%; JPY:22.73%,0.003,0.002
+Currency_Portfolio_17,Medium,Medium Term,EUR:25.00%; NZD:9.38%; AUD:28.12%; CNY:12.50%; USD:25.00%,0.005,0.006
+Currency_Portfolio_18,High,Short Term,CHF:1.82%; AUD:9.09%; EUR:16.36%; NZD:10.91%; JPY:16.36%; USD:7.27%; GBP:1.82%; CNY:16.36%; HKD:14.55%; CAD:5.45%,0.016,0.014
+Currency_Portfolio_19,Medium,Medium Term,CNY:10.42%; CAD:16.67%; JPY:18.75%; USD:14.58%; NZD:8.33%; AUD:16.67%; EUR:14.58%,0.008,0.006
+Currency_Portfolio_20,Medium,Short Term,JPY:13.79%; GBP:27.59%; NZD:10.34%; CAD:20.69%; HKD:10.34%; AUD:17.24%,0.007,0.004

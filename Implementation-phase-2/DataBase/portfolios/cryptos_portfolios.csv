@@ -1,0 +1,21 @@
+portfolio_name,risk_profile,time_horizon,assets,estimated_volatility,average_return
+Crypto_Portfolio_1,High,Medium Term,BNB:9.26%; LTC:5.56%; LINK:18.52%; DOT:9.26%; ADA:9.26%; BTC:5.56%; ETH:3.70%; UNI:11.11%; XLM:16.67%; SOL:3.70%; ATOM:7.41%,0.399,0.137
+Crypto_Portfolio_2,Medium,Medium Term,AVAX:13.24%; BNB:13.24%; ATOM:10.29%; BTC:5.88%; MATIC:4.41%; UNI:2.94%; DOT:8.82%; ADA:2.94%; DOGE:7.35%; SOL:4.41%; ETH:14.71%; LTC:4.41%; XLM:2.94%; LINK:4.41%,0.16,0.059
+Crypto_Portfolio_3,Medium,Long Term,LINK:4.00%; BTC:10.67%; ETH:5.33%; XRP:2.67%; MATIC:5.33%; DOGE:9.33%; BNB:6.67%; ATOM:4.00%; XLM:10.67%; UNI:4.00%; SOL:6.67%; LTC:5.33%; ADA:10.67%; DOT:2.67%; AVAX:12.00%,0.153,0.096
+Crypto_Portfolio_4,Low,Short Term,ADA:10.20%; BTC:10.20%; DOGE:8.16%; SOL:12.24%; MATIC:2.04%; BNB:18.37%; LINK:16.33%; XLM:10.20%; DOT:8.16%; XRP:4.08%,0.081,0.03
+Crypto_Portfolio_5,Low,Long Term,BTC:9.09%; ETH:14.55%; BNB:10.91%; XRP:3.64%; MATIC:9.09%; UNI:1.82%; DOT:12.73%; AVAX:1.82%; ADA:9.09%; SOL:9.09%; XLM:5.45%; LINK:5.45%; LTC:7.27%,0.077,0.046
+Crypto_Portfolio_6,High,Medium Term,ETH:9.38%; AVAX:6.25%; MATIC:1.04%; XLM:5.21%; BTC:10.42%; LINK:5.21%; ATOM:10.42%; UNI:10.42%; LTC:9.38%; ADA:4.17%; SOL:8.33%; DOGE:5.21%; DOT:6.25%; XRP:3.12%; BNB:5.21%,0.264,0.12
+Crypto_Portfolio_7,High,Long Term,ATOM:14.71%; LINK:14.71%; BNB:11.76%; MATIC:8.82%; XLM:13.24%; XRP:2.94%; DOGE:5.88%; ADA:2.94%; DOT:2.94%; LTC:13.24%; BTC:4.41%; SOL:2.94%; UNI:1.47%,0.299,0.118
+Crypto_Portfolio_8,Low,Short Term,ATOM:15.52%; DOT:5.17%; XRP:13.79%; XLM:1.72%; LTC:13.79%; BNB:8.62%; BTC:1.72%; ETH:6.90%; MATIC:10.34%; ADA:1.72%; LINK:15.52%; AVAX:5.17%,0.073,0.047
+Crypto_Portfolio_9,Medium,Short Term,XLM:6.74%; DOGE:10.11%; SOL:8.99%; XRP:5.62%; UNI:7.87%; BNB:1.12%; LTC:7.87%; BTC:10.11%; MATIC:5.62%; ETH:6.74%; ATOM:11.24%; ADA:4.49%; DOT:1.12%; AVAX:1.12%; LINK:11.24%,0.165,0.079
+Crypto_Portfolio_10,Low,Medium Term,DOGE:1.37%; MATIC:8.22%; SOL:8.22%; UNI:5.48%; XRP:2.74%; BTC:12.33%; LTC:2.74%; AVAX:5.48%; XLM:5.48%; ETH:10.96%; ATOM:6.85%; LINK:10.96%; ADA:10.96%; DOT:8.22%,0.095,0.035
+Crypto_Portfolio_11,High,Long Term,ADA:16.28%; XRP:6.98%; ETH:6.98%; UNI:4.65%; BNB:18.60%; BTC:6.98%; MATIC:18.60%; DOT:4.65%; AVAX:4.65%; LINK:11.63%,0.297,0.199
+Crypto_Portfolio_12,Low,Long Term,BNB:5.71%; UNI:14.29%; XLM:7.14%; DOT:1.43%; BTC:8.57%; ATOM:14.29%; SOL:5.71%; MATIC:11.43%; DOGE:2.86%; AVAX:2.86%; ADA:14.29%; LINK:11.43%,0.077,0.026
+Crypto_Portfolio_13,High,Medium Term,ETH:13.79%; ATOM:1.72%; BTC:1.72%; LTC:6.90%; ADA:6.90%; AVAX:17.24%; LINK:10.34%; SOL:1.72%; XLM:17.24%; UNI:3.45%; XRP:3.45%; MATIC:3.45%; DOT:12.07%,0.379,0.106
+Crypto_Portfolio_14,High,Short Term,ETH:10.75%; XRP:6.45%; DOGE:5.38%; UNI:5.38%; LTC:10.75%; BTC:3.23%; LINK:9.68%; BNB:6.45%; MATIC:9.68%; SOL:7.53%; ADA:6.45%; DOT:1.08%; ATOM:7.53%; AVAX:3.23%; XLM:6.45%,0.361,0.145
+Crypto_Portfolio_15,Medium,Short Term,DOT:6.94%; ATOM:9.72%; XLM:1.39%; BNB:5.56%; LINK:11.11%; SOL:13.89%; BTC:11.11%; ETH:8.33%; AVAX:1.39%; UNI:1.39%; MATIC:2.78%; ADA:12.50%; DOGE:12.50%; LTC:1.39%,0.198,0.059
+Crypto_Portfolio_16,Low,Short Term,MATIC:9.26%; UNI:18.52%; DOT:5.56%; DOGE:7.41%; AVAX:5.56%; SOL:11.11%; XLM:3.70%; ATOM:7.41%; BTC:7.41%; ADA:5.56%; LINK:7.41%; ETH:11.11%,0.07,0.021
+Crypto_Portfolio_17,High,Short Term,DOGE:17.31%; AVAX:5.77%; SOL:17.31%; LINK:1.92%; DOT:5.77%; ATOM:11.54%; ADA:5.77%; BNB:15.38%; ETH:11.54%; XRP:7.69%,0.227,0.153
+Crypto_Portfolio_18,Low,Medium Term,ETH:8.70%; ADA:14.49%; XLM:10.14%; LINK:1.45%; DOGE:10.14%; UNI:8.70%; MATIC:10.14%; ATOM:7.25%; SOL:8.70%; DOT:7.25%; XRP:1.45%; LTC:11.59%,0.067,0.036
+Crypto_Portfolio_19,High,Medium Term,LINK:15.25%; LTC:3.39%; SOL:11.86%; ETH:6.78%; MATIC:3.39%; BNB:5.08%; UNI:13.56%; ATOM:11.86%; BTC:1.69%; AVAX:5.08%; XRP:5.08%; DOGE:5.08%; XLM:11.86%,0.312,0.116
+Crypto_Portfolio_20,High,Long Term,UNI:14.81%; ADA:9.26%; XLM:9.26%; BTC:3.70%; ETH:18.52%; BNB:5.56%; AVAX:1.85%; ATOM:1.85%; XRP:14.81%; LTC:9.26%; SOL:11.11%,0.373,0.157

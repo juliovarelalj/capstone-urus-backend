@@ -1,0 +1,207 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Categorías de Portfolios - InversionPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('routes_bp.asset_classes') }}">InversionPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth_bp.logout') }}">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>Categorías de Portfolios</h1>
+    <p class="text-muted">Selecciona una categoría para ver los portfolios precreados.</p>
+    <div class="list-group">
+      {% for pc in portfolio_classes %}
+      <a href="{{ url_for('portfolios_bp.portfolio_list', portfolio_class=pc) }}"
+         class="list-group-item list-group-item-action">
+        {{ pc | capitalize }} Portfolios
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Categorías de Portfolios - InversionPro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome para íconos (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    /* Hero Section para las categorías de portfolios */
+    .hero-section {
+      background: linear-gradient(135deg, #28313B, #485461);
+      color: #fff;
+      padding: 60px 0;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .hero-section p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Tarjetas */
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem;
+    }
+    .footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .footer span {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('routes_bp.asset_classes') }}">InversionPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth_bp.logout') }}">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section para Portfolios -->
+  <div class="hero-section">
+    <div class="container">
+      <h1>Categorías de Portfolios</h1>
+      <p>
+        Selecciona una categoría para ver los portfolios precreados. Cada portfolio está cuidadosamente
+        diseñado para distintos perfiles de riesgo y horizontes de inversión.
+      </p>
+    </div>
+  </div>
+
+  <!-- Diccionarios de colores e íconos para cada categoría de portfolio -->
+  {% set portfolio_colors = {
+    'bonds': 'bg-warning text-dark',
+    'cryptos': 'bg-info text-dark',
+    'currencies': 'bg-secondary text-white',
+    'exchanges': 'bg-primary text-white',
+    'funds': 'bg-dark text-white',
+    'market_indices': 'bg-success text-white',
+    'stocks': 'bg-danger text-white',
+    'etf': 'bg-dark text-white'
+  } %}
+  {% set portfolio_icons = {
+    'bonds': 'fa-solid fa-handshake',
+    'cryptos': 'fa-solid fa-coins',
+    'currencies': 'fa-solid fa-money-bill-wave',
+    'exchanges': 'fa-solid fa-exchange-alt',
+    'funds': 'fa-solid fa-piggy-bank',
+    'market_indices': 'fa-solid fa-chart-bar',
+    'stocks': 'fa-solid fa-chart-line',
+    'etf': 'fa-solid fa-chart-pie'
+  } %}
+
+  <!-- Contenido Principal (Tarjetas) -->
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for pc in portfolio_classes %}
+      {% set header_class = portfolio_colors.get(pc, 'bg-secondary text-white') %}
+      {% set icon_class = portfolio_icons.get(pc, 'fa-solid fa-question-circle') %}
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header {{ header_class }}">
+            <i class="{{ icon_class }} fa-lg"></i>
+            {{ pc | replace("_", " ") | capitalize }} Portfolios
+          </div>
+          <div class="card-body d-flex flex-column">
+            <p class="text-muted mb-3">
+              Explora la lista de portfolios disponibles en la categoría de {{ pc | replace("_", " ") | capitalize }}.
+            </p>
+            <div class="mt-auto">
+              <a href="{{ url_for('portfolios_bp.portfolio_list', portfolio_class=pc) }}" class="btn btn-outline-primary">
+                Ver Portfolios
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <span>&copy; 2025 InversionPro. Todos los derechos reservados.</span>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
